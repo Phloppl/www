@@ -7,7 +7,7 @@ export const Asteroid =()=>{
     const {id} = useParams();
 return <div>
  <div>
-     Hello world Asteroid
+     {`Asteroid ID Page: ${id}`}
  </div>
 </div>
 }

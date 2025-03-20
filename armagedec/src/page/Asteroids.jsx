@@ -4,7 +4,7 @@
 export const Asteroids =()=>{
 return <div>
  <div>
-     Hello world
+     This is page Asteroids
  </div>
 </div>
 }
