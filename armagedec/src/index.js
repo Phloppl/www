@@ -4,21 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, redirect, RouterProvider} from "react-router-dom";
-import {Asteroids} from "./page/asteroids";
-
+import {Asteroids} from "./page/Asteroids";
+import {Destroyment} from "./page/Destroyment";
+import {Asteroid} from "./page/Asteroid";
 const router = createBrowserRouter([
 
     {
-        path: "/asteroids",
+        path: "/Asteroids",
         element: <Asteroids/>
     },
     {
-        path: "/destroyment",
-        element: <div>Hello second!</div>,
+        path: "/Destroyment",
+        element: <Destroyment/>,
     },
     {
-        path: "/asteroids/:id",
-        element: <div>Hello third!</div>,
+        path: "/Asteroid/:id",
+        element: <Asteroid/>,
     },
     {
         path: "*",
