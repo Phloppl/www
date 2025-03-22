@@ -5,21 +5,21 @@ import {useState} from "react";
 
 export const Asteroids =()=>{
     console.log("Parent Component rendered")
-return <div>
+    const [counter, setCounter] = useState(0);
+    return <div>
      <Header/>
-    <InternalComponent/>
-
-
-
-</div>
+    <InternalComponent counter ={counter} setCounter ={setCounter}/>
+    </div>
 
 }
-const InternalComponent = ()=>{
+const InternalComponent = (props) => {
+    const {counter, setCounter} = props
     console.log("Internal Component rendered")
-    const [counter, setCounter] = useState(0);
+
     return<div style={{backgroundColor: "red", hight: "200px", width: "200px"}}>
         Internal component
         {counter}
-        <button onClick={()=> setCounter(counter + 1)}>Counter</button>
+        <button onClick={()=>setCounter(counter + 1)}> Counter </button>
+
     </div>
 }
