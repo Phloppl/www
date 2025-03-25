@@ -1,18 +1,20 @@
-import {Link} from "react-router-dom";
-import styles from "./Header.module.css";
-
-export const Header = () => {
+import React from "react";
+import { Link } from 'react-router-dom'
+export function Header (props) {
     return (
-        <div className={styles.headPage}>
-            <div></div>
-            <div className={styles.headTitle}>
-                <h1>Армагеддон V</h1>
-                <div>Сервис мониторинга и уничтожения астероидов, опасно подлетающих к Земле.</div>
-            </div>
-            <div className={styles.asteroidsLink}><Link to={"/Asteroids"}
-                                                        className={styles.defLinkText}>Астероиды</Link></div>
-            <div className={styles.destroymentLink}><Link to={"/Destroyment"}
-                                                          className={styles.defLinkText}>Уничтожение</Link></div>
-        </div>
-    )
+        <header>
+            <h1>ARMAGGEDON V</h1>
+            <p>Сервис мониторинга и уничтожения астероидов, опасно подлетающих к Земле.</p>
+            <nav>
+                <ul>
+                    <li>
+                        <Link to="/asteroids">Астероиды</Link>
+                    </li>
+                    <li>
+                        <Link to="/destroyment">Уничтожение</Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    );
 }

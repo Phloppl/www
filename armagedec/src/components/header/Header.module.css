@@ -1,24 +1,8 @@
-.headPage{
-    width: 920px;
+.container {
+    width: 80vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    column-gap: 2em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.headTitle {
-    width: 35%;
-}
-.defLinkText {
-    margin-left: auto;
-    text-decoration-line: none;
-}
-
-.asteroidsLink {
-    margin-left: auto;
-    align-self: flex-end;
-}
-
-.destroymentLink {
-    align-self: flex-end;
+    align-items: flex-start;
+    justify-content: space-between;
 }
