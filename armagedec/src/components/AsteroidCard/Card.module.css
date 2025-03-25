@@ -1,0 +1,21 @@
+.card{
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.cardConst{
+    position: relative;
+    width: 1000px;
+    height: 200px;
+    background: linear-gradient(#aef148 0%, #3a58f3 100%);
+}
+
+.cardRed{
+    position: relative;
+    width: 1000px;
+    height: 200px;
+    background: linear-gradient(#537f8c 0%, #b67f7f 100%);
+}
